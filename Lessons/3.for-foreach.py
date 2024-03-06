@@ -1,5 +1,3 @@
-# Examples of for and foreach loops in Python
-
 # Example 1: Basic for loop
 for i in range(5):
     print(i, end=' ')
@@ -15,10 +13,14 @@ person = {"name": "Alice", "age": 30, "city": "New York"}
 for key, value in person.items():
     print(key + ":", value)
 
+two_d_array = [
+    [1, 3, 4, 5],
+    [1, 5, 23, 23]
+]
 # Example 4: Nested for loop
-for i in range(3):
-    for j in range(2):
-        print(i, j)
+for i in range(len(two_d_array)):
+    for j in range(len(two_d_array[0])):
+        print(two_d_array[i][j])
 
 # Tasks
 # Task 1: Print numbers from 1 to 10 using a for loop.

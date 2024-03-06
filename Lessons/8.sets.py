@@ -1,5 +1,3 @@
-# Examples and exercises for learning sets in Python
-
 # Example 1: Creating a set
 fruits = {"apple", "banana", "orange", "apple"}
 print("Set of fruits:", fruits)  # Duplicate elements are automatically removed
@@ -27,7 +25,7 @@ print("Difference of sets:", set1 - set2)
 for fruit in fruits:
     print(fruit)
 
-# Example 7: Frozenset
+# Example 7: Frozenset -> can't remove or add elements
 frozen_set = frozenset([1, 2, 3, 4])
 print("Frozen set:", frozen_set)
 

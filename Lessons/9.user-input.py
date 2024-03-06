@@ -1,5 +1,3 @@
-# Examples and exercises for learning data input in Python
-
 # Example 1: Getting user input for a string
 name = input("Enter your name: ")
 print("Hello,", name)
@@ -13,7 +11,7 @@ height = float(input("Enter your height in meters: "))
 print("Your height is", height, "meters.")
 
 # Example 4: Getting multiple inputs using split()
-numbers = input("Enter two numbers separated by space: ").split()
+numbers = input("Enter two numbers separated by space: ").split(",")
 num1, num2 = map(int, numbers)
 print("Sum of the numbers:", num1 + num2)
 
@@ -22,10 +20,11 @@ password = input("Enter your password: ")
 
 # Example 6: Handling user input as a list
 items = []
-while True:
+isRunning = True
+while isRunning:
     item = input("Enter an item (or 'done' to finish): ")
     if item == 'done':
-        break
+        isRunning = False
     items.append(item)
 print("Items entered:", items)
 

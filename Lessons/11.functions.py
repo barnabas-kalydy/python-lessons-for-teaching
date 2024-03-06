@@ -39,7 +39,8 @@ greet_person("Bob")
 print("Sum of numbers:", sum_numbers(1, 2, 3, 4, 5))
 
 # Exercises
-# Exercise 1: Create a function to calculate the area of a rectangle given its length and width.
+# Exercise 1: Create a function to calculate the area of a rectangle given its
+# length and width.
 # Exercise 2: Write a function to check if a number is even or odd.
 # Exercise 3: Create a function to find the maximum of three numbers.
 # Exercise 4: Write a function to check if a string is a palindrome.

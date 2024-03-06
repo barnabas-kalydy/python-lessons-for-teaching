@@ -1,5 +1,3 @@
-# Examples of while loop in Python
-
 # Example 1: Basic while loop
 count = 0
 while count < 5:

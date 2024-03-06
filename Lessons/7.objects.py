@@ -1,5 +1,3 @@
-# Examples and exercises for learning objects in Python
-
 # Example 1: Creating a simple class
 class Person:
     # This is the constructor of the class:

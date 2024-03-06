@@ -1,5 +1,3 @@
-# Examples and exercises for learning lists in Python
-
 # Example 1: Creating a list
 numbers = [1, 2, 3, 4, 5]
 
@@ -29,7 +27,7 @@ for number in numbers:
 print()
 
 # Example 8: List comprehension
-squared_numbers = [x ** 2 for x in numbers]
+squared_numbers = [x ** 2 for x in numbers if x > 3]
 print("Squared numbers:", squared_numbers)
 
 # Exercises

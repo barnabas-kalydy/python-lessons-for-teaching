@@ -22,7 +22,7 @@ coordinates = (10, 20)
 person = {"name": "Alice", "age": 25, "city": "New York"}
 
 # Set variable
-unique_numbers = {1, 2, 3, 4, 5}
+unique_numbers = {1, 2, 3, 4, 5, 34, 34, 34}
 
 # Displaying variables
 print("Integer:", num1)

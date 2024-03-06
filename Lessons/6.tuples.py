@@ -1,10 +1,10 @@
-# Examples and exercises for learning tuples in Python
-
 # Example 1: Creating a tuple
 person = ("John", 30, "New York")
 
 # Example 2: Accessing elements in a tuple
 print("Name:", person[0])
+# Tuples are immutable: this code will not run
+# person[0] = "asd"
 print("Age:", person[1])
 print("City:", person[2])
 
