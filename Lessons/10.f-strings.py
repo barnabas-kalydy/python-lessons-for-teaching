@@ -1,5 +1,3 @@
-# Examples and exercises for learning f-strings in Python
-
 # Example 1: Basic usage of f-strings
 name = "Alice"
 age = 30

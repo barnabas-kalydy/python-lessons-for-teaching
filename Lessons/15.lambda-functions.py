@@ -1,5 +1,3 @@
-# Examples and exercises for learning lambda functions in Python
-
 # Example 1: Basic usage of lambda function
 addition = lambda x, y: x + y
 print("Result of addition:", addition(3, 5))

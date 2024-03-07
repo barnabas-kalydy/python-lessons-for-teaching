@@ -1,5 +1,3 @@
-# Examples and exercises for learning error handling in Python
-
 # Example 1: Handling division by zero error
 try:
     result = 10 / 0

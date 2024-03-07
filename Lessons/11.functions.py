@@ -1,5 +1,3 @@
-# Examples and exercises for learning Python functions
-
 # Example 1: Creating a simple function
 def greet():
     print("Hello, welcome!")

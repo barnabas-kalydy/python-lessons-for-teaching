@@ -1,5 +1,3 @@
-# Examples and exercises for learning sorting lists in Python
-
 # Example 1: Sorting a list of numbers
 numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 sorted_numbers = sorted(numbers)
