@@ -1,48 +1,38 @@
-# Example 1: Basic usage of f-strings
+"""
+✨ This Python file serves as a demonstration of f-strings in Python.
+It includes examples and explanations of how to use f-strings for string formatting.
+"""
+
+# F-strings in Python
+
+# 🎉 Example 1: Basic usage
 name = "Alice"
 age = 30
-print(f"Hello, my name is {name} and I am {age} years old.")
+print(f"Example 1 - Hello, my name is {name} and I am {age} years old.")
 
-# Example 2: Evaluating expressions inside f-strings
-x = 10
-y = 20
-print(f"The sum of {x} and {y} is {x + y}.")
+# 📊 Example 2: Arithmetic operations within f-strings
+num1 = 10
+num2 = 5
+print(f"Example 2 - The sum of {num1} and {num2} is {num1 + num2}.")
 
-# Example 3: Using formatting options in f-strings
-pi = 3.14159
-print(f"Value of pi: {pi:.2f}")
-
-# Example 4: Calling methods inside f-strings
-message = "hello"
-print(f"Uppercase message: {message.upper()}")
-
-# Example 5: Using dictionary values in f-strings
+# 🌟 Example 3: Using f-strings with dictionary values
 person = {"name": "Bob", "age": 25}
-print(f"Person: {person['name']}, Age: {person['age']}")
+print(f"Example 3 - {person['name']} is {person['age']} years old.")
 
-# Example 6: Using f-strings in loops
-for i in range(1, 4):
-    print(f"Current value of i: {i}")
+# 💡 Example 4: Calling methods within f-strings
+sentence = "hello, world"
+print(f"Example 4 - The capitalized version of '{sentence}' is '{sentence.capitalize()}'.")
+ 
+# 🚀 Example 5: Formatting floating-point numbers
+pi = 3.141592653589793
+print(f"Example 5 - The value of pi is approximately {pi:.2f}.")
 
-# Example 7: Using f-strings for alignment
-for i in range(1, 6):
-    print(f"Number: {i:2}")
-
-# Example 8: Using f-strings with multiline strings
-name = "Alice"
-message = (
-    f"Hello, {name},\n"
-    f"How are you today?\n"
-    f"Have a great day!"
-)
-print(message)
-
-# Exercises
-# Exercise 1: Create an f-string to greet the user with their name.
-# Exercise 2: Calculate the area of a circle with radius 5 using an f-string to display the result.
-# Exercise 3: Use an f-string to print the current date and time.
-# Exercise 4: Create an f-string to display the first and last name of a person.
-# Exercise 5: Print a multiplication table using f-strings (with for loop).
-# Exercise 6: Format a floating-point number with precision using an f-string.
-# Exercise 7: Use an f-string to print a dictionary with its keys and values.
-# Exercise 8: Create a multiline string using f-strings to display a poem or a quote.
+# Tasks:
+# 🎈 Create a variable called 'city' with the value 'New York' and print "I live in New York."
+# 📅 Create variables 'day' and 'month' with values 14 and 3 respectively, and print "Today is the 14th of March."
+# 🍕 Create variables 'pizza_count' and 'price_per_pizza' with values 3 and 10 respectively, and print "The total cost of 3 pizzas is $30."
+# 🎁 Create a variable 'gift' with the value 'flowers' and print "I received flowers as a gift."
+# 🌞 Create variables 'celsius' and 'fahrenheit' with values 25 and the corresponding conversion, and print "25°C is equal to 77°F."
+# 🍔 Create variables 'name' and 'age' with values "John" and 35 respectively, and print "My name is John and I am 35 years old."
+# 💭 Create a variable 'sentence' with a long sentence, and print the number of characters in it.
+# 📚 Create variables 'author' and 'book_title' with values "J.K. Rowling" and "Harry Potter", and print "The author of 'Harry Potter' is J.K. Rowling."

@@ -1,42 +1,38 @@
-# Example 1: Creating a tuple
-person = ("John", 30, "New York")
+"""
+🐍 This Python file serves as a demonstration of tuples in Python.
+It includes examples and explanations of how to use tuples for immutable sequences.
+"""
 
-# Example 2: Accessing elements in a tuple
-print("Name:", person[0])
-# Tuples are immutable: this code will not run
-# person[0] = "asd"
-print("Age:", person[1])
-print("City:", person[2])
+# Tuples
 
-# Example 3: Unpacking a tuple
-name, age, city = person
-print("Unpacked variables:", name, age, city)
+# 📋 Example 1: Creating a tuple
+colors = ("red", "green", "blue")
+print(colors)
 
-# Example 4: Tuples are immutable
-# Uncomment the code below to see the error
-# person[1] = 40
+# 📊 Example 2: Accessing elements in a tuple
+print("First color:", colors[0])
+print("Last color:", colors[-1])
 
-# Example 5: Combining tuples
-person_info = person + ("Engineer",)
-print("Combined tuple:", person_info)
+# 🔄 Example 3: Iterating over a tuple
+for color in colors:
+    print(color)
 
-# Example 6: Repeating elements in a tuple
-numbers = (1, 2) * 3
-print("Repeated tuple:", numbers)
+# 🔍 Example 4: Checking if an item exists in a tuple
+if "green" in colors:
+    print("Yes, green is in the tuple.")
 
-# Example 7: Counting occurrences of an element in a tuple
-letters = ('a', 'b', 'c', 'a', 'b')
-print("Count of 'a':", letters.count('a'))
+# 📝 Example 5: Concatenating tuples
+numbers = (1, 2, 3)
+letters = ('a', 'b', 'c')
+combined = numbers + letters
+print("Combined tuple:", combined)
 
-# Example 8: Finding the index of an element in a tuple
-print("Index of 'c':", letters.index('c'))
-
-# Exercises
-# Exercise 1: Create a tuple containing your name, age, and country.
-# Exercise 2: Access the second element of the tuple.
-# Exercise 3: Unpack the tuple into separate variables.
-# Exercise 4: Try to modify an element in the tuple and observe the error.
-# Exercise 5: Combine two tuples into a new tuple.
-# Exercise 6: Repeat a tuple three times.
-# Exercise 7: Count the number of occurrences of a specific element in the tuple.
-# Exercise 8: Find the index of a specific element in the tuple.
+# Tasks:
+# 😎 Create a tuple of your favorite fruits and print them.
+# 📏 Create a tuple of your shoe sizes for different brands and print them.
+# 🤔 Create a tuple of prime numbers less than 10 and print them.
+# 😄 Create a tuple of your favorite animals and check if "elephant" is in the tuple.
+# 🌈 Create two tuples of your favorite colors and concatenate them into a single tuple.
+# 🦄 Create a tuple of your favorite sports and print them in reverse order.
+# 🎲 Create a tuple of your birth year, month, and day, and print them separately.
+# 🌟 Create a tuple of your favorite TV shows and print the length of the tuple.

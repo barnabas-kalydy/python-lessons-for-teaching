@@ -1,49 +1,54 @@
-# Example 1: Creating a simple class
-class Person:
-    # This is the constructor of the class:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+"""
+🐍 This Python file serves as a demonstration of objects in Python.
+It includes examples and explanations of how to create and manipulate objects using classes.
+"""
 
-# Example 2: Creating an object of the class
-person1 = Person("Alice", 25)
+# Objects
 
-# Example 3: Accessing object attributes
-print("Name:", person1.name)
-print("Age:", person1.age)
+# 🧱 Example 1: Creating a class
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
 
-# Example 4: Modifying object attributes
-person1.age = 30
-print("Modified age:", person1.age)
+    def display_info(self):
+        print(f"{self.year} {self.brand} {self.model}")
 
-# Example 5: Adding methods to a class
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
+# 🚗 Example 2: Creating objects from a class
+car1 = Car("Toyota", "Corolla", 2020)
+car2 = Car("Honda", "Civic", 2018)
 
-    def area(self):
-        return 3.14 * self.radius ** 2
+# 🖨️ Example 3: Accessing object attributes and methods
+car1.display_info()
+car2.display_info()
 
-# Example 6: Creating an object and calling a method
-circle1 = Circle(5)
-print("Area of the circle:", circle1.area())
+# 🛠️ Example 4: Modifying object attributes
+car1.year = 2022
+car1.display_info()
 
-# Example 7: Inheritance
-class Student(Person):
-    def __init__(self, name, age, major):
-        super().__init__(name, age)
-        self.major = major
+# 💥 Example 5: Deleting object attributes
+del car2.year
+# print(car2.year)  # This will raise an AttributeError
 
-# Example 8: Creating an object of the subclass
-student1 = Student("Bob", 20, "Computer Science")
-print("Student's major:", student1.major)
+# 🧩 Example 6: Inheritance
+class ElectricCar(Car):
+    def __init__(self, brand, model, year, battery_capacity):
+        super().__init__(brand, model, year)
+        self.battery_capacity = battery_capacity
 
-# Exercises
-# Exercise 1: Create a class representing a book with attributes title, author, and pages.
-# Exercise 2: Create an object of the class and print its attributes.
-# Exercise 3: Modify one of the attributes of the object.
-# Exercise 4: Add a method to the class to get the number of pages.
-# Exercise 5: Create a subclass of the book class representing an e-book with an additional attribute format.
-# Exercise 6: Create an object of the e-book class and print its attributes.
-# Exercise 7: Override the method to get the number of pages in the e-book class.
-# Exercise 8: Create a method in the e-book class to check if it's compatible with Kindle.
+    def display_info(self):
+        print(f"{self.year} {self.brand} {self.model} (Electric)")
+
+# ⚡ Example 7: Creating objects from a subclass
+electric_car = ElectricCar("Tesla", "Model S", 2021, "100 kWh")
+electric_car.display_info()
+
+# Tasks:
+# 😎 Create a class representing a person with attributes name, age, and gender.
+# 📏 Create objects for three different people and display their information.
+# 🤔 Create a class representing a rectangle with attributes length and width, and a method to calculate its area.
+# 😄 Create an object representing your favorite book with attributes title, author, and year of publication.
+# 🌈 Create a class representing your smartphone with attributes brand, model, and price.
+# 🎲 Create a class representing your future bank account with attributes account number, balance, and owner's name.
+# 🎇 Add deposit and withdraw methods to your future bank account class

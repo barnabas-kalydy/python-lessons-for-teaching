@@ -1,55 +1,40 @@
-# Example 1: Sorting a list of numbers
-numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+"""
+🔍 This Python file serves as a demonstration of sorting lists in Python.
+It includes examples and explanations of how to use built-in sorting functions and custom sorting functions.
+"""
+
+# Sorting Lists
+
+# 🎯 Example 1: Sorting a list of numbers in ascending order
+numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5]
 sorted_numbers = sorted(numbers)
 print("Sorted numbers:", sorted_numbers)
 
-# Example 2: Sorting a list in reverse order
-reverse_sorted_numbers = sorted(numbers, reverse=True)
-print("Reverse sorted numbers:", reverse_sorted_numbers)
+# 📚 Example 2: Sorting a list of strings in alphabetical order
+fruits = ["apple", "banana", "orange", "grape", "kiwi"]
+sorted_fruits = sorted(fruits)
+print("Sorted fruits:", sorted_fruits)
 
-# Example 3: Sorting a list in place
-print("Original list:", numbers)
-numbers.sort()
-print("Sorted list in place:", numbers)
+# 🌟 Example 3: Sorting a list of tuples based on a specific element
+students = [("Alice", 22), ("Bob", 18), ("Charlie", 25), ("David", 20)]
+sorted_students_by_age = sorted(students, key=lambda x: x[1])  # Sorting based on age (second element)
+print("Sorted students by age:", sorted_students_by_age)
 
-# Example 4: Sorting a list of strings
-words = ["apple", "banana", "orange", "grape", "cherry"]
-sorted_words = sorted(words)
-print("Sorted words:", sorted_words)
+# ✨ Example 4: Sorting a list of dictionaries based on a specific key
+employees = [
+    {"name": "Alice", "age": 30},
+    {"name": "Bob", "age": 25},
+    {"name": "Charlie", "age": 35}
+]
+sorted_employees_by_age = sorted(employees, key=lambda x: x["age"])
+print("Sorted employees by age:", sorted_employees_by_age)
 
-# Example 5: Sorting a list of tuples by a specific element
-students = [("Alice", 22), ("Bob", 20), ("Charlie", 25)]
-sorted_students = sorted(students, key=lambda x: x[1])
-print("Sorted students by age:", sorted_students)
-
-# Example 6: Sorting a list of dictionaries by a specific key
-people = [{"name": "Alice", "age": 22}, {"name": "Bob", "age": 20}, {"name": "Charlie", "age": 25}]
-sorted_people = sorted(people, key=lambda x: x["age"])
-print("Sorted people by age:", sorted_people)
-
-# Example 7: Sorting a list of objects by a specific attribute
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-people_objects = [Person("Alice", 22), Person("Bob", 20), Person("Charlie", 25)]
-sorted_people_objects = sorted(people_objects, key=lambda x: x.age)
-print("Sorted people objects by age:")
-for person in sorted_people_objects:
-    print(person.name, person.age)
-
-# Example 8: Sorting a list of strings with custom sorting criteria
-words = ["banana", "apple", "Orange", "Grape", "cherry"]
-sorted_words_custom = sorted(words, key=lambda x: x.lower())
-print("Case-insensitive sorted words:", sorted_words_custom)
-
-# Exercises
-# Exercise 1: Sort the given list of numbers in descending order.
-# Exercise 2: Sort the list of strings based on their length in ascending order.
-# Exercise 3: Sort the list of tuples based on the sum of their elements.
-# Exercise 4: Sort the list of dictionaries based on the value of a nested key.
-# Exercise 5: Sort the list of objects based on multiple attributes.
-# Exercise 6: Sort the list of strings based on the number of vowels in each string.
-# Exercise 7: Sort the list of tuples based on the product of their elements.
-# Exercise 8: Sort the list of strings based on the presence of a specific character.
+# Tasks:
+# 💡 Sort the list of temperatures [32, 25, 18, 27, 30] in descending order.
+# 🚀 Sort the list of strings ["apple", "Orange", "banana", "Kiwi"] ignoring case sensitivity.
+# 🎩 Sort the list of tuples [(3, 2), (1, 5), (4, 1), (2, 3)] based on the sum of their elements.
+# 🍕 Sort the list of dictionaries based on the length of the "name" key's value.
+# 🎸 Sort the list of numbers [100, 23, 45, 78, 95] and find the second highest number.
+# 🏆 Sort the list of strings ["python", "java", "C++", "javascript"] based on their lengths in ascending order.
+# 🍭 Sort the list of lists [[3, 1, 4], [1, 5, 9], [2, 6, 5], [3, 5, 8]] based on the sum of elements in each list.
+# 🎨 Sort the list of strings ["apple", "banana", "cherry", "date"] based on the number of vowels in each word.

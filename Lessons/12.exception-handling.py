@@ -1,74 +1,49 @@
-# Example 1: Handling division by zero error
+"""
+🚨 This Python file serves as a demonstration of exception handling in Python.
+It includes examples and explanations of how to handle errors and exceptions.
+"""
+
+# Exception Handling in Python
+
+# 🛑 Example 1: Handling ZeroDivisionError
 try:
     result = 10 / 0
 except ZeroDivisionError:
-    print("Error: Division by zero")
+    print("Example 1 - Cannot divide by zero.")
 
-# Example 2: Handling type error
+# 🔍 Example 2: Handling IndexError
 try:
-    num = int("abc")
+    my_list = [1, 2, 3]
+    print("Example 2 - Element at index 5:", my_list[5])
+except IndexError:
+    print("IndexError: Index is out of range.")
+
+# 💡 Example 3: Handling ValueError
+try:
+    value = int("abc")
+    print("Example 3 - Parsed integer:", value)
 except ValueError:
-    print("Error: Invalid conversion")
+    print("ValueError: Cannot convert 'abc' to an integer.")
 
-# Example 3: Using try-except-else block
-try:
-    num = int(input("Enter a number: "))
-except ValueError:
-    print("Error: Invalid input")
-else:
-    print("You entered:", num)
-
-# Example 4: Handling multiple exceptions
-try:
-    file = open("nonexistent.txt", "r")
-    data = file.read()
-    file.close()
-except FileNotFoundError:
-    print("Error: File not found")
-except IOError:
-    print("Error: Unable to read file")
-
-# Example 5: Handling exceptions with finally block
+# 🌟 Example 4: Handling multiple exceptions
 try:
     num = 10 / 0
+    value = int("abc")
 except ZeroDivisionError:
-    print("Error: Division by zero")
-finally:
-    print("Execution complete")
+    print("Example 4 - Cannot divide by zero.")
+except ValueError:
+    print("Example 4 - Cannot convert 'abc' to an integer.")
 
-# Example 6: Raising exceptions
-def divide(x, y):
-    if y == 0:
-        raise ValueError("Division by zero")
-    return x / y
-
+# 🎉 Example 5: Handling generic exception
 try:
-    result = divide(10, 0)
-except ValueError as e:
-    print("Error:", e)
+    result = 10 / 0
+except Exception as e:
+    print("Example 5 - An error occurred:", str(e))
 
-# Example 7: Custom exception
-class MyError(Exception):
-    pass
-
-try:
-    raise MyError("An error occurred")
-except MyError as e:
-    print("Custom error:", e)
-
-# Example 8: Assertion error
-num = 10
-try:
-    assert num > 100
-except AssertionError:
-    print("Assertion failed")
-
-# Exercises
-# Exercise 1: Handle the FileNotFoundError exception and print a custom message.
-# Exercise 2: Write a function to divide two numbers and handle the ZeroDivisionError.
-# Exercise 3: Create a custom exception called NameTooShortError and raise it when a name is less than 3 characters.
-# Exercise 4: Use assert statement to check if a number is positive, if not raise an AssertionError.
-# Exercise 5: Handle the IndexError exception when accessing elements in a list and print a custom message.
-# Exercise 6: Write a function to open a file, read its contents, and close it. Handle all possible exceptions.
-# Exercise 7: Raise a ValueError if a user enters a negative number in input.
-# Exercise 8: Use try-except block to handle the ValueError when converting user input to an integer.
+# Tasks:
+# 📏 Handle a FileNotFoundError when trying to open a non-existent file for reading.
+# 🍕 Handle a TypeError when trying to concatenate a string with a number.
+# 📊 Handle a KeyError when accessing a non-existent key in a dictionary.
+# 💭 Handle an AttributeError when trying to access an attribute of a non-existent object.
+# 🚀 Handle a NameError when trying to use a variable that is not defined.
+# 📝 Handle a ValueError when trying to convert user input to an integer.

@@ -1,54 +1,41 @@
-# Example 1: Filtering even numbers from a list
+"""
+🔍 This Python file serves as a demonstration of filtering lists in Python.
+It includes examples and explanations of how to use built-in filtering functions and list comprehensions for filtering.
+"""
+
+# Filtering Lists
+
+# 🎯 Example 1: Filtering even numbers from a list using list comprehension
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+even_numbers = [num for num in numbers if num % 2 == 0]
 print("Even numbers:", even_numbers)
 
-# Example 2: Filtering strings based on length
-words = ["apple", "banana", "orange", "grape", "cherry"]
-short_words = list(filter(lambda x: len(x) < 6, words))
-print("Short words:", short_words)
+# 📚 Example 2: Filtering strings starting with 'A' from a list using list comprehension
+names = ["Alice", "Bob", "Charlie", "David", "Anna", "Andrew"]
+names_starting_with_a = [name for name in names if name.startswith('A')]
+print("Names starting with 'A':", names_starting_with_a)
 
-# Example 3: Filtering positive numbers
+# 🌟 Example 3: Filtering positive numbers from a list using filter() function
+numbers = [-2, -1, 0, 1, 2, 3, 4, 5]
 positive_numbers = list(filter(lambda x: x > 0, numbers))
 print("Positive numbers:", positive_numbers)
 
-# Example 4: Filtering tuples based on a condition
-tuples = [(1, 2), (3, 4), (5, 6), (7, 8)]
-filtered_tuples = list(filter(lambda x: sum(x) > 5, tuples))
-print("Filtered tuples:", filtered_tuples)
+# ✨ Example 4: Filtering dictionaries based on a specific condition using list comprehension
+students = [
+    {"name": "Alice", "age": 22},
+    {"name": "Bob", "age": 18},
+    {"name": "Charlie", "age": 25},
+    {"name": "David", "age": 20}
+]
+adult_students = [student for student in students if student['age'] >= 18]
+print("Adult students:", adult_students)
 
-# Example 5: Filtering dictionaries based on a condition
-people = [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 20}]
-filtered_people = list(filter(lambda x: x["age"] < 30, people))
-print("Filtered people:", filtered_people)
-
-# Example 6: Filtering objects based on an attribute
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-people_objects = [Person("Alice", 25), Person("Bob", 30), Person("Charlie", 20)]
-filtered_people_objects = list(filter(lambda x: x.age < 30, people_objects))
-print("Filtered people objects:")
-for person in filtered_people_objects:
-    print(person.name, person.age)
-
-# Example 7: Filtering strings containing a specific character
-filtered_words = list(filter(lambda x: 'a' in x, words))
-print("Words containing 'a':", filtered_words)
-
-# Example 8: Filtering based on custom criteria
-numbers2 = [-1, 2, -3, 4, -5, 6, -7, 8, -9, 10]
-filtered_numbers2 = list(filter(lambda x: x > 0 and x % 2 == 0, numbers2))
-print("Positive even numbers:", filtered_numbers2)
-
-# Exercises
-# Exercise 1: Filter the given list of numbers to get only the multiples of 3.
-# Exercise 2: Filter the list of strings to get only the words starting with 'b'.
-# Exercise 3: Filter the list of tuples to get only the tuples where both elements are even numbers.
-# Exercise 4: Filter the list of dictionaries to get only the people whose age is less than 25.
-# Exercise 5: Filter the list of objects to get only the people whose name starts with 'A'.
-# Exercise 6: Filter the list of strings to get only the palindromes.
-# Exercise 7: Filter the list of tuples to get only the tuples where the second element is greater than the first.
-# Exercise 8: Filter the list of numbers to get only the primes.
+# Tasks:
+# 💡 Filter numbers greater than 50 from the list [20, 35, 50, 65, 80, 90].
+# 🚀 Filter strings containing the letter 'o' from the list ["apple", "banana", "orange", "grape", "kiwi"].
+# 🎩 Filter tuples with even sums from the list [(3, 4), (1, 5), (6, 2), (2, 3)].
+# 🍕 Filter dictionaries with ages greater than or equal to 30 from the list of employees (create the list first).
+# 🎸 Filter strings longer than 5 characters from the list ["python", "java", "C++", "javascript"].
+# 🏆 Filter lists containing the number 5 from the list of lists [[3, 5, 4], [1, 6, 7], [9, 2, 8], [5, 4, 2]].
+# 🍭 Filter strings containing at least two vowels from the list ["apple", "banana", "cherry", "date"].
+# 🎨 Filter tuples where the first element is greater than the second from the list [(3, 2), (1, 5), (4, 1), (2, 3)].
