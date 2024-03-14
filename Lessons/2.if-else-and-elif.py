@@ -1,42 +1,45 @@
-# Examples of if-else and elif statements in Python
+"""
+🚥 This Python file serves as a demonstration of conditional statements in Python.
+It includes examples and explanations of if statements, if-else statements, if-elif-else statements, and ternary operators.
+"""
 
-# Example 1: Simple if-else statement
-num = 10
-if num > 0:
-    print("Positive number")
+# If Statements
+# 🛑 Example 1: Simple if statement
+age = 18
+if age >= 18:
+    print("You are old enough to vote.")
+
+# If-Else Statements
+# 🚦 Example 2: If-else statement
+temperature = 25
+if temperature > 30:
+    print("It's hot outside!")
 else:
-    print("Non-positive number")
+    print("It's not too hot outside.")
 
-# Example 2: if-elif-else ladder
-score = 85
-if score >= 90:
-    grade = "A"
-elif score >= 80:
-    grade = "B"
-elif score >= 70:
-    grade = "C"
-elif score >= 60:
-    grade = "D"
+# If-Elif-Else Statements
+# 🌞 Example 3: If-elif-else statement
+time_of_day = "morning"
+if time_of_day == "morning":
+    print("Good morning!")
+elif time_of_day == "afternoon":
+    print("Good afternoon!")
 else:
-    grade = "F"
-print("Your grade is:", grade)
+    print("Good evening!")
 
-# Example 3: Nested if-else statements
-num = 15
-if num % 2 == 0:
-    if num % 3 == 0:
-        print("Divisible by both 2 and 3")
-    else:
-        print("Divisible by 2 but not by 3")
-else:
-    print("Not divisible by 2")
+# Ternary Operator
+# ➕ Example 4: Ternary operator
+number = 10
+result = "Even" if number % 2 == 0 else "Odd"
+print("Number is:", result)
 
-# Tasks
-# Task 1: Check if a number is positive, negative, or zero.
-# Task 2: Determine if a person is eligible to vote based on their age.
-# Task 3: Find the largest of three numbers.
-# Task 4: Determine if a year is a leap year or not.
-# Task 5: Check if a character is a vowel or consonant.
-# Task 6: Determine if a number is even or odd.
-# Task 7: Classify a triangle based on its sides (equilateral, isosceles, scalene).
-# Task 8: Check if a number is prime or composite.
+# Tasks:
+# 😎 Write an if-else statement to check if your age is above 25 or not.
+# 🎉 Write an if-elif-else statement to determine which season is it based on the current month.
+# 💼 Write a ternary operator to check if the year 2024 is a leap year or not.
+# 😄 Write an if-else statement to check if a password "P@ssw0rd" meets these criteria:
+#	- length > 8, contains uppercase, contains lowercase, and contains special characters.
+# 🍂 Write an if-else statement to check if the temperature 22 is within the comfortable range (20-25).
+# 🦄 Write an if-else statement to determine if the year 2100 is a century year or not (ending with 00).
+# 🎭 Write a ternary operator to determine if 532 is divisible by both 5 and 7.
+# 🌈 Write an if-else statement to check if your favorite color is blue or not.

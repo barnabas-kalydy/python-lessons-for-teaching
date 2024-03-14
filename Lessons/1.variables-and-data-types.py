@@ -1,45 +1,49 @@
-# Examples of variables and data types in Python
+"""
+🐍 This Python file serves as a demonstration of basic data types in Python.
+It includes examples and explanations of integers, floats, strings, booleans, lists, tuples, and dictionaries.
+"""
 
-# Integer variable
+# Integers
+# 🔢 Example 1: Define an integer variable
 num1 = 10
+print("Example 1 - Integer variable:", num1)
 
-# Float variable
+# Floats
+# 🌊 Example 2: Define a float variable
 num2 = 3.14
+print("Example 2 - Float variable:", num2)
 
-# String variable
-name = "John Doe"
+# Strings
+# 📝 Example 3: Define a string variable
+name = "John"
+print("Example 3 - String variable:", name)
 
-# Boolean variable
+# Booleans
+# ✔️ Example 4: Define a boolean variable
 is_student = True
+print("Example 4 - Boolean variable:", is_student)
 
-# List variable
+# Lists
+# 📋 Example 5: Define a list
 fruits = ["apple", "banana", "orange"]
+print("Example 5 - List:", fruits)
 
-# Tuple variable
+# Tuples
+# 🍇 Example 6: Define a tuple
 coordinates = (10, 20)
+print("Example 6 - Tuple:", coordinates)
 
-# Dictionary variable
-person = {"name": "Alice", "age": 25, "city": "New York"}
+# Dictionaries
+# 📚 Example 7: Define a dictionary
+person = {"name": "Alice", "age": 30, "city": "New York"}
+print("Example 7 - Dictionary:", person)
 
-# Set variable
-unique_numbers = {1, 2, 3, 4, 5, 34, 34, 34}
-
-# Displaying variables
-print("Integer:", num1)
-print("Float:", num2)
-print("String:", name)
-print("Boolean:", is_student)
-print("List:", fruits)
-print("Tuple:", coordinates)
-print("Dictionary:", person)
-print("Set:", unique_numbers)
-
-# Tasks
-# Task 1: Create a variable to store your age.
-# Task 2: Define a variable to store the price of a product.
-# Task 3: Assign your favorite color to a variable.
-# Task 4: Create a boolean variable indicating whether it's raining.
-# Task 5: Make a list of your favorite movies.
-# Task 6: Define a tuple containing the coordinates of your current location.
-# Task 7: Create a dictionary to store your contact information (name, email, phone number).
-# Task 8: Make a set containing your favorite numbers.
+# Tasks:
+# 🎯 Create a list containing the names of your three favorite movies.
+# 📅 Create a tuple representing the current date (year, month, day).
+# 📚 Create a dictionary representing information about your favorite book (title, author, publication year).
+# 🚦 Define a boolean variable indicating whether it's raining outside or not.
+# 🎒 Create a list containing the names of your three favorite subjects in school.
+# 📱 Create a dictionary representing information about your smartphone (brand, model, year of release).
+# 🥤 Define a float variable representing the price of a can of soda.
+# 🧩 Create a list containing the ages of your family members.
