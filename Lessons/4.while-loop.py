@@ -1,32 +1,44 @@
-# Example 1: Basic while loop
+"""
+🐍 This Python file serves as a demonstration of while loops in Python.
+It includes examples and explanations of how to use while loops for iterative execution.
+"""
+
+# While Loops
+
+# 🔄 Example 1: Simple while loop
 count = 0
 while count < 5:
-    print(count, end=' ')
+    print("Count is:", count)
     count += 1
-print()
 
-# Example 2: Infinite loop with user input
-# Uncomment the code below and be cautious when running as it creates an infinite loop
-"""
+# 🔢 Example 2: While loop with condition based on user input
+number = int(input("Enter a number greater than 10: "))
+while number <= 10:
+    print("Number is not greater than 10.")
+    number = int(input("Enter a number greater than 10: "))
+print("Number is greater than 10.")
+
+# 📝 Example 3: While loop with break statement
+num = 1
 while True:
-    user_input = input("Enter 'quit' to exit: ")
-    if user_input.lower() == 'quit':
+    print(num)
+    num += 1
+    if num > 5:
         break
-"""
 
-# Example 3: While loop with else statement
-num = 5
-while num > 0:
-    print(num, end=' ')
-    num -= 1
-else:
-    print("Loop finished.")
+# 🛤️ Example 4: While loop with continue statement
+i = 0
+while i < 5:
+    i += 1
+    if i == 3:
+        continue
+    print("Current value is:", i)
 
-# Tasks
-# Task 1: Print numbers from 1 to 10 using a while loop.
-# Task 2: Calculate the sum of digits of a number using a while loop.
-# Task 3: Determine if a number is a palindrome using a while loop.
-# Task 4: Print a series of numbers until the sum exceeds 100 using a while loop.
-# Task 5: Read numbers from the user until a negative number is entered using a while loop.
-# Task 6: Calculate the factorial of a number using a while loop.
-# Task 7: Print even numbers between 1 and 10 using a while loop.
+# Tasks:
+# 😎 Write a while loop to print numbers from 10 to 1 in descending order.
+# 📏 Write a while loop to calculate the factorial of a number entered by the user.
+# 🤔 Write a while loop to find the first Fibonacci number greater than 1000.
+# 😄 Write a while loop to repeatedly ask the user for a password until they enter "password123".
+# 🌈 Write a while loop to generate random numbers between 1 and 10 until a 7 is generated.
+# 🎲 Write a while loop to check if a given number is a palindrome.
+# 🌟 Write a while loop to print the multiplication table of a given number up to 10.

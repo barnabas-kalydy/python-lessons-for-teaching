@@ -1,41 +1,48 @@
-# Example 1: Creating a list
-numbers = [1, 2, 3, 4, 5]
+"""
+🐍 This Python file serves as a demonstration of lists in Python.
+It includes examples and explanations of how to use lists for storing and manipulating data.
+"""
 
-# Example 2: Accessing elements in a list
-print("First element:", numbers[0])
-print("Last element:", numbers[-1])
+# Lists
 
-# Example 3: Slicing a list
-print("Sliced list:", numbers[2:4])
+# 📋 Example 1: Creating a list
+fruits = ["apple", "banana", "cherry"]
+print(fruits)
 
-# Example 4: Modifying elements in a list
-numbers[1] = 10
-print("Modified list:", numbers)
+# 📊 Example 2: Accessing elements in a list
+print("First fruit:", fruits[0])
+print("Last fruit:", fruits[-1])
 
-# Example 5: Appending elements to a list
-numbers.append(6)
-print("Appended list:", numbers)
+# 🔄 Example 3: Iterating over a list
+for fruit in fruits:
+    print(fruit)
 
-# Example 6: Removing elements from a list
-removed_element = numbers.pop(2)
-print("Removed element:", removed_element)
-print("List after removal:", numbers)
+# 🔍 Example 4: Checking if an item exists in a list
+if "banana" in fruits:
+    print("Yes, banana is in the list.")
 
-# Example 7: Iterating over a list
-for number in numbers:
-    print(number, end=' ')
-print()
+# 📝 Example 5: Modifying elements in a list
+fruits[1] = "grape"
+print("Modified list:", fruits)
 
-# Example 8: List comprehension
-squared_numbers = [x ** 2 for x in numbers if x > 3]
-print("Squared numbers:", squared_numbers)
+# 📦 Example 6: Adding elements to a list
+fruits.append("orange")
+print("After appending:", fruits)
 
-# Exercises
-# Exercise 1: Create a list of your favorite colors.
-# Exercise 2: Access the second element of the list.
-# Exercise 3: Slice the list to get the first three elements.
-# Exercise 4: Change the third element of the list to a new color.
-# Exercise 5: Append a new color to the list.
-# Exercise 6: Remove the last color from the list.
-# Exercise 7: Iterate over the list and print each color.
-# Exercise 8: Create a new list containing the lengths of each color name.
+# ➖ Example 7: Removing elements from a list
+fruits.remove("cherry")
+print("After removing:", fruits)
+
+# 🔄 Example 8: Copying a list
+new_fruits = fruits.copy()
+print("Copied list:", new_fruits)
+
+# Tasks:
+# 😎 Create a list of your favorite movies and print them.
+# 📏 Create a list of your friends' names and print the length of the list.
+# 🤔 Create a list of numbers from 1 to 10 and print the sum of all elements.
+# 😄 Create a list of your favorite colors and print the first and last colors.
+# 🌈 Create a list of programming languages you want to learn and check if "Python" is in the list.
+# 🦄 Create a list of your favorite books and add a new book to the list.
+# 🎲 Create a list of your favorite foods and remove one food item from the list.
+# 🌟 Create a list of your hobbies and print them in reverse order.
