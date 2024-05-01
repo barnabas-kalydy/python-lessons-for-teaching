@@ -29,6 +29,20 @@ employees = [
 sorted_employees_by_age = sorted(employees, key=lambda x: x["age"])
 print("Sorted employees by age:", sorted_employees_by_age)
 
+# 🎓 Example 5: Sorting list of dictionaries by multiple criteria
+students = [
+    {"name": "Anna", "age": 20, "gpa": 3.8},
+    {"name": "Zero", "age": 22, "gpa": 3.5},
+    {"name": "Anna", "age": 22, "gpa": 3.9}
+]
+
+# Sorting students by name (ascending) and then by age (descending)
+students.sort(key=lambda x: (x["name"], -x["age"]))
+
+# Printing sorted students
+for student in students:
+    print(student)
+
 # Tasks:
 # 💡 Sort the list of temperatures [32, 25, 18, 27, 30] in descending order.
 # 🚀 Sort the list of strings ["apple", "Orange", "banana", "Kiwi"] ignoring case sensitivity.
