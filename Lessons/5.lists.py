@@ -3,8 +3,6 @@
 It includes examples and explanations of how to use lists for storing and manipulating data.
 """
 
-# Lists
-
 # 📋 Example 1: Creating a list
 fruits = ["apple", "banana", "cherry"]
 print(fruits)
@@ -32,10 +30,6 @@ print("After appending:", fruits)
 # ➖ Example 7: Removing elements from a list
 fruits.remove("cherry")
 print("After removing:", fruits)
-
-# 🔄 Example 8: Copying a list
-new_fruits = fruits.copy()
-print("Copied list:", new_fruits)
 
 # Tasks:
 # 😎 Create a list of your favorite movies and print them.

@@ -3,13 +3,11 @@
 It includes examples and explanations of if statements, if-else statements, if-elif-else statements, and ternary operators.
 """
 
-# If Statements
 # 🛑 Example 1: Simple if statement
 age = 18
 if age >= 18:
     print("You are old enough to vote.")
 
-# If-Else Statements
 # 🚦 Example 2: If-else statement
 temperature = 25
 if temperature > 30:
@@ -17,7 +15,6 @@ if temperature > 30:
 else:
     print("It's not too hot outside.")
 
-# If-Elif-Else Statements
 # 🌞 Example 3: If-elif-else statement
 time_of_day = "morning"
 if time_of_day == "morning":
@@ -27,8 +24,8 @@ elif time_of_day == "afternoon":
 else:
     print("Good evening!")
 
-# Ternary Operator
 # ➕ Example 4: Ternary operator
+# Syntax: [on_true] if [expression] else [on_false]
 number = 10
 result = "Even" if number % 2 == 0 else "Odd"
 print("Number is:", result)

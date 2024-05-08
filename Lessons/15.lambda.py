@@ -3,8 +3,6 @@
 It includes examples and explanations of how to use lambda functions for simple, one-line operations.
 """
 
-# Lambda Functions
-
 # 🎯 Example 1: Adding two numbers using lambda function
 addition = lambda x, y: x + y
 print("Addition:", addition(3, 5))

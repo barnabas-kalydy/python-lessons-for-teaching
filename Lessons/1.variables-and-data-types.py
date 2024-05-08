@@ -28,15 +28,17 @@ print("Example 4 - Boolean variable:", is_student)
 fruits = ["apple", "banana", "orange"]
 print("Example 5 - List:", fruits)
 
-# Tuples
+# Tuples - immutable sequences
 # 🍇 Example 6: Define a tuple
 coordinates = (10, 20)
+# This will result an error:
+# coordinates[0] = 1
 print("Example 6 - Tuple:", coordinates)
 
 # Dictionaries
 # 📚 Example 7: Define a dictionary
 person = {"name": "Alice", "age": 30, "city": "New York"}
-print("Example 7 - Dictionary:", person)
+print("Example 7 - Dictionary:", person.get("name"))
 
 # Tasks:
 # 🎯 Create a list containing the names of your three favorite movies.

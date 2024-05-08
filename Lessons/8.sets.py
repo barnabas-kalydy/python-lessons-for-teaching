@@ -3,10 +3,8 @@
 It includes examples and explanations of how to use sets for storing unique elements.
 """
 
-# Sets in Python
-
 # 🔄 Example 1: Creating a set
-my_set = {1, 2, 3, 4, 5}
+my_set = {1, 2, 3, 4, 5, 5, 5}
 print("Example 1 - Set elements:", my_set)
 
 # ➖ Example 2: Adding elements to a set

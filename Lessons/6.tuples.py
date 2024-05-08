@@ -3,9 +3,7 @@
 It includes examples and explanations of how to use tuples for immutable sequences.
 """
 
-# Tuples
-
-# 📋 Example 1: Creating a tuple
+# 📋 Example 1: Creating a tuple - immutable sequences
 colors = ("red", "green", "blue")
 print(colors)
 

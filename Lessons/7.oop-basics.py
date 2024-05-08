@@ -3,8 +3,6 @@
 It includes examples and explanations of how to create and manipulate objects using classes.
 """
 
-# Objects
-
 # 🧱 Example 1: Creating a class
 class Car:
     def __init__(self, brand, model, year):
