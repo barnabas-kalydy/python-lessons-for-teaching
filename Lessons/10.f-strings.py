@@ -3,8 +3,6 @@
 It includes examples and explanations of how to use f-strings for string formatting.
 """
 
-# F-strings in Python
-
 # 🎉 Example 1: Basic usage
 name = "Alice"
 age = 30

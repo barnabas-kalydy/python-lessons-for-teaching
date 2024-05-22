@@ -3,11 +3,9 @@
 It includes examples and explanations of how to prompt users for input and process their responses.
 """
 
-# User Input in Python
-
 # 📥 Example 1: Basic input prompt
 name = input("Example 1 - Please enter your name: ")
-print("Hello,", name + "!")
+print("Hello, ", name + "!")
 
 # 📝 Example 2: Integer input
 age = int(input("Example 2 - Please enter your age: "))

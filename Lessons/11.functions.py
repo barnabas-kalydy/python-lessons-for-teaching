@@ -3,8 +3,6 @@
 It includes examples and explanations of how to define and use functions.
 """
 
-# Functions in Python
-
 # 🛠️ Example 1: Basic function definition and call
 def greet():
     print("Example 1 - Hello, World!")
